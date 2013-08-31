@@ -1,0 +1,5 @@
+Django==1.5
+Pillow==1.7.8
+python-instagram==0.8.0
+-e git+git://github.com/nathanborror/django-basic-apps.git#egg=django_basic_apps
+simplejson
