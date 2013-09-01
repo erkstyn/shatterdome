@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+class Link(models.Model):
+	logo_url = models.ImageField(upload_to='registry')
+	name = models.TextField()
+	url = models.URLField()
