@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{% spaceless %}
+        {% block title %}
+            {% block extra_title %}{% endblock %}Krysten &amp; Chris&#39;s Shatterwedding
+        {% endblock %}
+    {% endspaceless %}</title>
+
+    {% block head %}
+        <link rel="stylesheet" href="{{ STATIC_URL }}/base.css" />
+    {% endblock %}
+</head>
+<body>
+    {% block body %}
+        <marquee>You&#39;re it until you die or I find someone better</marquee>
+    {% endblock %}
+</body>
+</html>
