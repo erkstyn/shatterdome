@@ -1,4 +1,9 @@
-# Django settings for shatterdome project.
+import os
+
+ROOT = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), '..')
+)
+_ = lambda path: os.path.join(ROOT, path)
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -108,9 +113,7 @@ ROOT_URLCONF = 'shatterdome.urls'
 WSGI_APPLICATION = 'shatterdome.wsgi.application'
 
 TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
+    _('templates'),
 )
 
 INSTALLED_APPS = (
@@ -126,7 +129,8 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'guests',
     'registry',
-    'alerts'
+    'alerts',
+    'main',
 )
 
 # A sample logging configuration. The only tangible logging
